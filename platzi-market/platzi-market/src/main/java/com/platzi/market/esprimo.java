@@ -14,12 +14,16 @@ public class esprimo
         int n = Integer.valueOf(value);
 
         boolean prime = true;
-        if (n == 2) return "Es primo";
+        if ( n == 1 ) return "No es primo: construccion";
+         
+        if ( n == 2 ) return "Es primo";
+
         if ( n % 2 == 0 ) return "No es primo: 2";
+
         int i = 3;
         while( prime && ( i < Math.sqrt(n)+1 ) )
         {
-            prime = prime && (n%i == 0);
+            prime = ! (n%i == 0);
             i += 2;
         }
 
