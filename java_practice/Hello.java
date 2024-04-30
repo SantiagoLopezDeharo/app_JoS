@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
 
-import javax.xml.transform.Source;
-
 class sumar
 {
     private int a = 0;
