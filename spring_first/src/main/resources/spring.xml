@@ -4,13 +4,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--	<bean id="alien1" class="com.telusko.Alien" scope="singleton">  -->
-	<bean id="alien1" class="com.example.spring_first.Alien" >
-			<property name="lap" ref="lap"/>
+	<bean id="alien1" class="com.example.spring_first.Alien" autowire="byName">
+<!--			<property name="lap" ref="lap"/>                            -->
 	</bean>
-	
-
-	
-	<bean id="lap" class="com.example.spring_first.Laptop">
+		
+	<bean id="lap" class="com.example.spring_first.Laptop" lazy-init="true">
     <property name="i" value="0"/>
 	</bean>
 </beans>
