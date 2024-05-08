@@ -1,5 +1,8 @@
 package com.example.spring_first;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Alien {
 
     private Laptop lap;
