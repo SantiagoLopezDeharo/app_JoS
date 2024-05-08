@@ -1,5 +1,10 @@
 package com.example.spring_first;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component("lap")
+@Primary
 public class Laptop {
 
     private int i;

@@ -32,7 +32,7 @@ public class SpringFirstApplication {
 		Laptop obj2 = ctx.getBean(Laptop.class);
 		obj2.compile();
 		
-		Alien obj = ctx.getBean("alien1", Alien.class);
+		Alien obj = ctx.getBean(Alien.class);
 		obj.code();
 	}
 
