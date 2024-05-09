@@ -2,6 +2,7 @@ package com.aprendiendo.springbootweb1;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,5 +29,11 @@ public class HomeController {
         //session.setAttribute("resultado", result);
 
         return model;
+    }
+
+    @RequestMapping("addAlien")
+    public String addAlien(@ModelAttribute Alien alien)
+    {
+        return "result";
     }
 }

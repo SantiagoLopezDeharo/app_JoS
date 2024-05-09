@@ -6,11 +6,11 @@
 </head>
 </body>
     <h2>Sumar numeros</h2>
-    <form action="add">
-        <label for="num1">Enter 1st numero: </label>
-        <input type="text" id="num1" name="num1"><br>
-        <label for="num2">Enter 2nd numero: </label>
-        <input type="text" id="num2" name="num2"><br>
+    <form action="addAlien">
+        <label for="aid">Enter aid numero: </label>
+        <input type="text" id="aid" name="aid"><br>
+        <label for="aname">Enter aname : </label>
+        <input type="text" id="aname" name="aname"><br>
         <input type="submit" value="submit">
     </form>
 </body>
