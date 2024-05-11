@@ -47,7 +47,7 @@
 						<li class="nav-item"><a class="nav-link" href="home">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="viewalljobs">About</a></li>
 						
-						<li class="nav-item"><a class="nav-link" href="https://telusko.com/">Contact</a>
+						<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/santiago-lopez-de-haro-2a1a4029a/">Contact</a>
 						</li>
 					</ul>
 				</div>
