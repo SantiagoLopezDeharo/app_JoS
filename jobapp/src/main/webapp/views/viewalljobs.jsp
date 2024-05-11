@@ -2,8 +2,8 @@
 <%@ taglib prefix="ab" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page isELIgnored="false"%>
 <%@ page import="java.util.List" %>
-<%@ page import="com.telusko.JobApp.model.JobPost" %>
-<%@ page import="com.telusko.JobApp.repo.JobRepo" %>
+<%@ page import="com.aprendiendo.jobapp.model.JobPost" %>
+<%@ page import="com.aprendiendo.jobapp.repo.JobRepo" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
