@@ -3,6 +3,7 @@ package com.aprendiendo.springsecurity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -35,8 +36,9 @@ public class SecurityConfig {
     {
         hs  .csrf(customizer -> 
                 customizer.disable())
-            .authorizeHttpRequests(request -> 
-                request.anyRequest().authenticated())
+            .authorizeHttpRequests((requests) -> requests
+            .requestMatchers(HttpMethod.GET,"/about", "/register", "/error").permitAll()
+            .anyRequest().authenticated())
             //.formLogin(Customizer.withDefaults())
             .httpBasic(Customizer.withDefaults())
             .sessionManagement(session -> 
