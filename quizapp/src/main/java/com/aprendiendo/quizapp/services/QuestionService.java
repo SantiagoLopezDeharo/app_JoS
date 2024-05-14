@@ -13,8 +13,18 @@ public class QuestionService {
 
     @Autowired
     QuestionDao qDao;
+    
     public List<Question> getAllQuestions() {
         return qDao.findAll();
+    }
+
+    public List<Question> getQuestionsByCategory(String categ) {
+        return qDao.findByCategory(categ);
+    }
+
+    public String addQuestion(Question question) {
+        qDao.save(question);
+        return "Success";
     }
     
 }
